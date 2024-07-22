@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import { useParams } from "react-router-dom";
 import useGame from "../hooks/useGame";
-import { Game } from "../hooks/useGames";
+import { Game } from "../entities/Game";
 import APIClient from "../services/api-client";
 
 const GameDetailPage = () => {
