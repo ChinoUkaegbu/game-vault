@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import useGame from "../hooks/useGame";
 import { Game } from "../entities/Game";
 import APIClient from "../services/api-client";
+import ExpandableText from "../components/ExpandableText";
 
 const GameDetailPage = () => {
   const { slug } = useParams();
@@ -17,7 +18,7 @@ const GameDetailPage = () => {
   return (
     <>
       <Heading>{game.name}</Heading>
-      <Text>{game.description_raw}</Text>
+      <ExpandableText>{game.description_raw}</ExpandableText>
     </>
   );
 };
